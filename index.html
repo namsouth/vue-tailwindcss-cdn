@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://unpkg.com/favicon.ico" />
+  <script src="https://unpkg.com/vue@3"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography/dist/typography.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/forms/dist/forms.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/aspect-ratio/dist/aspect-ratio.min.css" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <style>
+    html {
+      font-family: 'Inter var', sans-serif;
+    }
+  </style>
+  <title>Vue 3.x + Tailwind 2.x (cdn)</title>
+</head>
+
+<body>
+  <!-- template -->
+  <div id="app">
+    <section class="min-h-screen grid place-items-center bg-gray-100">
+      <button
+        class="transition py-2 px-4 font-bold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none">
+        {{ message }}
+      </button>
+    </section>
+  </div>
+  <!-- script -->
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          message: 'Vue 3.x + Tailwind 2.x',
+        }
+      },
+    }).mount('#app')
+  </script>
+</body>
+
+</html>
