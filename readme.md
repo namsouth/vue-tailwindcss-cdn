@@ -7,6 +7,7 @@ It's a single HTML file intended for rapid prototyping and it includes:
 - Plugin @tailwindcss/forms
 - Plugin @tailwindcss/typography
 - Plugin @tailwindcss/aspect-ratio
+- Plugin @tailwindcss/line-clamp
 - Inter var font
 - Nice button :)
 
